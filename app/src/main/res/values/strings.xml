@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ViewPager Cards</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum.</string>
+    <string name="raças">Raças
+        Vira-lata         Dachshund
+        Shih-Tzu          Spitz Alemão
+        Yorkshire         Pinscher
+        Poodle            Schnauzer
+        Lhasa Apso        Beagle
+        Buldogue Francês  Cocker Spaniel
+        Maltês            Border Collie
+        Golden Retriever  Buldogue Inglês
+        Labrador          Pit Bull
+        Pug               Chow Chow
+
+
+
+
+
+
+
+
+
+
+
+"</string>
+    <string name="nada">
+        nada
+    </string>
+    <string-array name="vacinas">
+        <item name="V8">V8</item>
+        <item name="V10">V10</item>
+        <item name="V12">V12</item>
+        <item name="Gripe Canina">Gripe Canina</item>
+        <item name="Giárdia">Giárdia</item>
+        <item name="Antirrábica">Antirrábica</item>
+        <item name="Leishmaniose">Leishmaniose</item>
+    </string-array>
+
+    <string name="textocomida">
+    Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia,
+    incluindo a água ingerida junto com a alimentação.<b>Lembre-se de sempre deixar o potinho do seu Pet cheio de água, mas fique tranquilo, a gente te lembra disso.</b></string>
+</resources>

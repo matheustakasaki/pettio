@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:id="@+id/imagem_agua"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/nada"
+        android:src="@drawable/agua" />
+
+    <TextView
+        android:id="@+id/text_agua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imagem_agua"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham"
+        android:text="Água"
+        android:textColor="#ffff"
+        android:textSize="60sp"/>
+    <View
+        android:id="@+id/view_agua"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_agua"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="#f26f6f" />
+
+    <TextView
+        android:id="@+id/text_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/view_agua"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/gotham"
+        android:text="Informações"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/textoComida1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_descricao"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:text="Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia"
+        android:gravity="end"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/calibri"
+
+        />
+    <TextView
+        android:id="@+id/textoComida2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoComida1"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/calibri"
+        android:textSize="20sp"
+        android:textColor="#f26f6f"
+        android:text="Mas, lembre-se de sempre deixar o potinho do seu Pet cheio de água."
+        android:gravity="fill_horizontal"
+        />
+    <TextView
+        android:id="@+id/textoComida3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoComida2"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/calibri"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Fique tranquilo, a gente te lembra disso."
+        android:gravity="fill_horizontal"
+        />
+
+
+</RelativeLayout>

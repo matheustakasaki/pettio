@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:text="Vacinas"
+    android:textSize="20sp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp"
+    android:textColor="#96ffffff"
+    android:layout_height="wrap_content"
+    >
+
+</TextView>
