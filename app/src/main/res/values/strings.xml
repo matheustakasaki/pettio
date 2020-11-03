@@ -12,18 +12,25 @@
         Golden Retriever  Buldogue Inglês
         Labrador          Pit Bull
         Pug               Chow Chow
+    </string>
+
+    <!-- Textos da Tela de Login -->
+    <string name="textoBotaoLogin">Login</string>
+
+    <!-- Textos da Tela de Cadastro-->
+    <string name="fraseCadastro">
+        Faça o seu cadastro!
+    </string>
+
+    <string name="nomeUsuario">Nome</string>
+    <string name="idadeUsuario">Idade</string>
+    <string name="emailUsuario">E-mail</string>
+    <string name="senhaUsuario">Senha</string>
+    <string name="cepUsuario">CEP</string>
+
+    <string name="textoBotaoCadastrar">Cadastre-se</string>
 
 
-
-
-
-
-
-
-
-
-
-"</string>
     <string name="nada">
         nada
     </string>
@@ -38,6 +45,7 @@
     </string-array>
 
     <string name="textocomida">
-    Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia,
-    incluindo a água ingerida junto com a alimentação.<b>Lembre-se de sempre deixar o potinho do seu Pet cheio de água, mas fique tranquilo, a gente te lembra disso.</b></string>
+        Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia,
+        incluindo a água ingerida junto com a alimentação.<b>Lembre-se de sempre deixar o potinho do seu Pet cheio de água, mas fique tranquilo, a gente te lembra disso.</b>
+    </string>
 </resources>

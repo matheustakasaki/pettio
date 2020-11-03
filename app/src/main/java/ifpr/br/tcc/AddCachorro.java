@@ -42,7 +42,7 @@ public class AddCachorro extends AppCompatActivity {
     }
     public void cadastrarCachorro(View view) throws IOException {
 
-        EditText nomeCadastroCachorro = findViewById(R.id.nomeCadastroCachorro);
+        EditText nomeCadastroCachorro = findViewById(R.id.nomeCadastroUsuario);
         String nomeCachorro = nomeCadastroCachorro.getText().toString();
 
         EditText idadeCadastroCachorro = findViewById(R.id.idadeCadastroCachorro);
@@ -51,17 +51,17 @@ public class AddCachorro extends AppCompatActivity {
         EditText pesoCadastroCachorro = findViewById(R.id.pesoCadastroCachorro);
         String pesoCachorro = pesoCadastroCachorro.getText().toString();
 
-        EditText alturaCadastroCachorro = findViewById(R.id.alturaCadastroCachorro);
+        EditText alturaCadastroCachorro = findViewById(R.id.senhaCadastroUsuario);
         String alturaCachorro = alturaCadastroCachorro.getText().toString();
 
-        EditText racaCadastroCachorro = findViewById(R.id.racaCadastroCachorro);
+        EditText racaCadastroCachorro = findViewById(R.id.cepCadastroUsuario);
         String racaCadastro = racaCadastroCachorro.getText().toString();
 
         EditText peso = findViewById(R.id.pesoCadastroCachorro);
         String pesoString = pesoCadastroCachorro.getText().toString();
         Double pesoDouble = Double.parseDouble(pesoString);
 
-        EditText altura = findViewById(R.id.alturaCadastroCachorro);
+        EditText altura = findViewById(R.id.senhaCadastroUsuario);
         String alturaString = alturaCadastroCachorro.getText().toString();
         Double alturaDouble = Double.parseDouble(alturaString);
 

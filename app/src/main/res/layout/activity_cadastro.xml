@@ -9,12 +9,6 @@
     android:background="@drawable/blurbg"
     >
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </FrameLayout>
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -26,14 +20,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
+            android:id="@+id/fraseContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -45,11 +32,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/gotham"
-                android:text="Faça seu Cadastro!"
+                android:text="@string/fraseCadastro"
                 android:textColor="#ffffff"
-                android:textSize="32sp" />
+                android:textSize="32sp"
+                tools:targetApi="jelly_bean"
+                tools:text="@string/fraseCadastro" />
 
             <View
+                android:id="@+id/sublinhadoFrase"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="2dp"
@@ -80,16 +70,17 @@
 
             <EditText
 
-                android:id="@+id/nomeCadastroCachorro"
+                android:id="@+id/nomeCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
-                android:fontFamily="@font/calibri"
-                android:hint="Nome"
+                app:fontFamily="@font/calibri"
+                android:hint="@string/nomeUsuario"
                 android:inputType="textPersonName"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -100,16 +91,17 @@
 
             <EditText
 
-                android:id="@+id/idadeCadastro"
+                android:id="@+id/idadeCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
-                android:fontFamily="@font/calibri"
-                android:hint="Idade"
+                app:fontFamily="@font/calibri"
+                android:hint="@string/idadeUsuario"
                 android:inputType="text|number"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
 
@@ -120,17 +112,19 @@
 
 
             <EditText
-                android:id="@+id/emailCadastro"
+                android:id="@+id/emailCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableRight="@drawable/ic_email_white_24dp"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
                 android:drawablePadding="16dp"
-                android:fontFamily="@font/calibri"
-                android:hint="E-mail"
+                app:fontFamily="@font/calibri"
+                android:hint="@string/emailUsuario"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -140,17 +134,20 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/alturaCadastroCachorro"
+                android:id="@+id/senhaCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableRight="@drawable/ic_lock_white_24dp"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/calibri"
-                android:hint="Senha"
+                android:hint="@string/senhaUsuario"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints=""
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -159,16 +156,18 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/racaCadastroCachorro"
+                android:id="@+id/cepCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/calibri"
-                android:hint="CEP"
+                android:hint="@string/cepUsuario"
                 android:inputType="text|number"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="jelly_bean"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -186,12 +185,14 @@
                 android:layout_marginRight="16dp"
                 android:background="@drawable/buttonshapewhitebg"
                 android:fontFamily="@font/calibri"
-                android:text="Cadastrar"
                 android:onClick="cadastrarUsuario"
+                android:text="@string/textoBotaoCadastrar"
                 android:textAllCaps="false"
                 android:textColor="#96ffffff"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean"
+                android:layout_marginEnd="16dp" />
 
 
 

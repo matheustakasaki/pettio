@@ -112,11 +112,12 @@
                 android:drawableRight="@drawable/ic_email_white_24dp"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/calibri"
-                android:hint="E-mail"
+                android:hint="@string/emailUsuario"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -133,7 +134,7 @@
                 android:drawableRight="@drawable/ic_lock_white_24dp"
                 android:drawablePadding="16dp"
                 android:fontFamily="@font/calibri"
-                android:hint="Senha"
+                android:hint="@string/senhaUsuario"
                 android:inputType="textPassword"
                 android:maxLines="1"
                 android:textColor="@android:color/white"
@@ -155,8 +156,8 @@
                 android:layout_marginRight="16dp"
                 android:background="@drawable/buttonshapewhitebg"
                 android:fontFamily="@font/calibri"
-                android:text="Cadastrar"
-                android:onClick="onClick"
+                android:onClick="irParaTelaCadastro"
+                android:text="@string/textoBotaoCadastrar"
                 android:textAllCaps="false"
                 android:textColor="#96ffffff"
                 android:textSize="16dp"
@@ -168,8 +169,8 @@
                 android:layout_marginLeft="16dp"
                 android:background="@drawable/buttonshapewhitebg"
                 android:fontFamily="@font/calibri"
-                android:onClick="teste"
-                android:text="Login"
+                android:onClick="login"
+                android:text="@string/textoBotaoLogin"
                 android:textAllCaps="false"
                 android:textColor="#96ffffff"
                 android:textSize="16dp"

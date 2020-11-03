@@ -99,7 +99,7 @@
 
             <EditText
 
-                android:id="@+id/nomeCadastroCachorro"
+                android:id="@+id/nomeCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"
@@ -156,7 +156,7 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/alturaCadastroCachorro"
+                android:id="@+id/senhaCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableRight="@drawable/information24px"
@@ -176,7 +176,7 @@
             android:theme="@style/EditScreenTextInputLayoutStyle">
 
             <EditText
-                android:id="@+id/racaCadastroCachorro"
+                android:id="@+id/cepCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawablePadding="16dp"

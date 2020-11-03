@@ -25,19 +25,19 @@ public class Cadastro extends AppCompatActivity {
     }
     public void cadastrarUsuario(View view) throws IOException {
 
-        EditText nomeCadastro = findViewById(R.id.nomeCadastroCachorro);
+        EditText nomeCadastro = findViewById(R.id.nomeCadastroUsuario);
         String nome = nomeCadastro.getText().toString();
 
-        EditText idadeCadastro = findViewById(R.id.idadeCadastro);
+        EditText idadeCadastro = findViewById(R.id.idadeCadastroUsuario);
         String idade = idadeCadastro.getText().toString();
 
-        EditText emailCadastro = findViewById(R.id.emailCadastro);
+        EditText emailCadastro = findViewById(R.id.emailCadastroUsuario);
         String email = emailCadastro.getText().toString();
 
-        EditText senhaCadastro = findViewById(R.id.alturaCadastroCachorro);
+        EditText senhaCadastro = findViewById(R.id.senhaCadastroUsuario);
         String senha = senhaCadastro.getText().toString();
 
-        EditText cepCadastro = findViewById(R.id.racaCadastroCachorro);
+        EditText cepCadastro = findViewById(R.id.cepCadastroUsuario);
         String cep = cepCadastro.getText().toString();
 
 

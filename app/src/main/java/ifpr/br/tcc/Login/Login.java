@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void onClick(View view) {
+    public void irParaTelaCadastro(View view) {
     Intent cadastro = new Intent(this, Cadastro.class);
     startActivity(cadastro);
 
@@ -43,21 +43,21 @@ public class Login extends AppCompatActivity {
     public void teste(View view) {
         Intent teste = new Intent(this, MainActivity.class);
         startActivity(teste);
-
     }
 
     public void login(View view) throws IOException, JSONException {
-
         EditText emailLogin = findViewById(R.id.emailLogin);
         EditText senhaLogin = findViewById(R.id.senhaLogin);
 
         String emailDigitado = emailLogin.getText().toString();
         String senhaDigitada = senhaLogin.getText().toString();
 
-        JSONArray todosOsUsuarios = DBHelper.selectAllFromUsuarios();
+
+        JSONArray todosOsUsuarios = DBHelper.selectAllFromDono();
         boolean encontrou = false;
         for (int i = 0; i < todosOsUsuarios.length(); i++) {
             JSONObject usuario = todosOsUsuarios.getJSONObject(i);
+
             String email = usuario.getString("email");
             String senha = usuario.getString("senha");
             if (email.equals(emailDigitado) && senha.equals(senhaDigitada)) {
