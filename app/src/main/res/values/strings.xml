@@ -44,8 +44,36 @@
         <item name="Leishmaniose">Leishmaniose</item>
     </string-array>
 
+    <string-array name="horarios1">
+        <item name="6:00">6:00</item>
+        <item name="7:00">7:00</item>
+        <item name="8:00">8:00</item>
+        <item name="9:00">9:00</item>
+        <item name="10:00">10:00</item>
+        <item name="11:00">11:00</item>
+    </string-array>
+
+    <string-array name="horarios2">
+        <item name="12:00">12:00</item>
+        <item name="13:00">13:00</item>
+        <item name="14:00">14:00</item>
+        <item name="15:00">15:00</item>
+        <item name="16:00">16:00</item>
+        <item name="17:00">17:00</item>
+    </string-array>
+
+    <string-array name="horarios3">
+        <item name="18:00">18:00</item>
+        <item name="19:00">19:00</item>
+        <item name="20:00">20:00</item>
+        <item name="21:00">21:00</item>
+        <item name="22:00">22:00</item>
+        <item name="23:00">23:00</item>
+    </string-array>
+
     <string name="textocomida">
         Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia,
         incluindo a água ingerida junto com a alimentação.<b>Lembre-se de sempre deixar o potinho do seu Pet cheio de água, mas fique tranquilo, a gente te lembra disso.</b>
     </string>
+    <string name="title_activity_veterinario">Map</string>
 </resources>

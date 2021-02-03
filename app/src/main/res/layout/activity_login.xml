@@ -169,7 +169,7 @@
                 android:layout_marginLeft="16dp"
                 android:background="@drawable/buttonshapewhitebg"
                 android:fontFamily="@font/calibri"
-                android:onClick="login"
+                android:onClick="teste"
                 android:text="@string/textoBotaoLogin"
                 android:textAllCaps="false"
                 android:textColor="#96ffffff"

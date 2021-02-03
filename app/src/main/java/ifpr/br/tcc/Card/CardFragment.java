@@ -21,6 +21,7 @@ import ifpr.br.tcc.Comida;
 import ifpr.br.tcc.MainActivity;
 import ifpr.br.tcc.R;
 import ifpr.br.tcc.Vacina;
+import ifpr.br.tcc.Veterinario;
 
 public class CardFragment extends Fragment {
 
@@ -76,8 +77,8 @@ public class CardFragment extends Fragment {
         }
         else if (getArguments().getInt("position" ) == 4 ) {
             title.setText(String.format("Veterinário"));
-            text.setText (String.format(""));
-            icone.setImageResource(R.drawable.comida);
+            text.setText (String.format("Encontre veterinários perto de você"));
+            icone.setImageResource(R.drawable.veterinario);
             button.setText(String.format("Veterinário"));
         }
 
@@ -100,8 +101,12 @@ public class CardFragment extends Fragment {
                 else if (getArguments().getInt("position" ) == 3) {
                     Intent intentComida = new Intent(getContext(), Comida.class);
                     startActivity(intentComida);
-
                 }
+                else if (getArguments().getInt("position" ) == 4) {
+                    Intent intentVeterinario = new Intent(getContext(), Veterinario.class);
+                    startActivity(intentVeterinario);
+                }
+
 
             }
         });

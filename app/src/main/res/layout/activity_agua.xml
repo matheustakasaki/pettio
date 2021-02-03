@@ -49,46 +49,47 @@
         android:text="Informações"
         android:textColor="#ffffff"
         android:textSize="17sp" />
+
     <TextView
         android:id="@+id/textoComida1"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_descricao"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="41dp"
         android:layout_marginRight="10dp"
-        android:text="Um cão deve ingerir em torno de 50 a 60 ml por quilo de seu peso diariamente. Ou seja, um cachorro com 10 quilos precisa beber cerca de 600 ml de água por dia"
-        android:gravity="end"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
         android:fontFamily="@font/calibri"
+        android:gravity="end"
+        android:text="O alarme vai desparar de 1 em 1 hora"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
 
         />
+
     <TextView
         android:id="@+id/textoComida2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textoComida1"
-        android:layout_marginTop="60dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
         android:fontFamily="@font/calibri"
-        android:textSize="20sp"
-        android:textColor="#f26f6f"
+        android:gravity="fill_horizontal"
         android:text="Mas, lembre-se de sempre deixar o potinho do seu Pet cheio de água."
-        android:gravity="fill_horizontal"
-        />
-    <TextView
-        android:id="@+id/textoComida3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textoComida2"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/calibri"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:text="Fique tranquilo, a gente te lembra disso."
-        android:gravity="fill_horizontal"
-        />
+        android:textColor="#f26f6f"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/textoComida2"
+        android:layout_below="@+id/textoComida1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-27dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/textoComida1" />
 
 
 </RelativeLayout>
