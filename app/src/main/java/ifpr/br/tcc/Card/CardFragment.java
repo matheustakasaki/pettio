@@ -74,6 +74,12 @@ public class CardFragment extends Fragment {
             icone.setImageResource(R.drawable.comida);
             button.setText(String.format("Comida"));
         }
+        else if (getArguments().getInt("position" ) == 4 ) {
+            title.setText(String.format("Veterinário"));
+            text.setText (String.format(""));
+            icone.setImageResource(R.drawable.comida);
+            button.setText(String.format("Veterinário"));
+        }
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
